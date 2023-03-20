@@ -32,6 +32,6 @@ struct DraggableImageView: View {
 
 struct DraggableImageView_Previews: PreviewProvider {
     static var previews: some View {
-        DraggableImageView(name: "Test", nsImage: NSImage())
+        DraggableImageView(name: "Test", nsImage: NSImage(deviceModel: .current) ?? NSImage())
     }
 }
