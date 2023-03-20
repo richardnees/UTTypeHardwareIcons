@@ -11,7 +11,7 @@ final class NSImageTests: XCTestCase {
         let model: UTType.DeviceModel = .current
         let image = NSImage(deviceModel: model)
 
-        XCTAssertNotNil(image)
+        XCTAssertNotNil(image, "model : \(model), image : \((image != nil) ? "found" : "not found")")
     }
 
     func test_invalid_model_returns_empty_image() throws {
