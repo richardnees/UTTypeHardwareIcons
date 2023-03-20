@@ -23,7 +23,7 @@ NSImage(deviceModel: .current, size: CGSize(width: 64, height: 64))
 ```
 
 
-### MacBook Pro M2 Pro/Max aka. Mac14,6
+### MacBook Pro M2 Pro/Max (_Mac14,6_)
 
 ![Mac14,6](Documentation/Images/Mac14_6.png)
 
@@ -37,7 +37,7 @@ Image(deviceModel: "Mac14,6", size: CGSize(width: 512, height: 512))
 NSImage(deviceModel: "Mac14,6", size: CGSize(width: 512, height: 512))
 ```
 
-iPhone 14 aka. iPhone14,7
+### iPhone 14 (_iPhone14,7_)
 
 ![iPhone14,7](Documentation/Images/iPhone14_7.png)
 
