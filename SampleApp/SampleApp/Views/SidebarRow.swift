@@ -9,7 +9,6 @@ struct SidebarRow: View {
     var body: some View {
         NavigationLink(value: model) {
             HStack {
-                Image(deviceModel: model, size: iconSize)
                 VStack(alignment: .leading) {
                     Text(UTType(deviceModel: model)?.localizedDescription ?? "Unknown Model")
                     Text(model)
