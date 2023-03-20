@@ -30,6 +30,16 @@ extension UTType.DeviceModel {
         sysctlbyname("hw.model", nil, &size, nil, 0)
         var machine = [CChar](repeating: 0,  count: Int(size))
         sysctlbyname("hw.model", &machine, &size, nil, 0)
-        return String(cString: machine)
+        let modelString = String(cString: machine)
+        let returnString: String
+
+        // Handle Virtualization
+        if modelString.hasPrefix("VMware") {
+            returnString = "MacBookPro18,1"
+        } else {
+            returnString = modelString
+        }
+
+        return returnString
     }
 }
