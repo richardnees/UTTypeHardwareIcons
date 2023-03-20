@@ -1,3 +1,5 @@
+[![Swift](https://github.com/richardnees/UTTypeHardwareIcons/actions/workflows/BuildAndTest.yml/badge.svg)](https://github.com/richardnees/UTTypeHardwareIcons/actions/workflows/BuildAndTest.yml)
+
 # UTTypeHardwareIcons
 Getting hardware icons on macOS
 
